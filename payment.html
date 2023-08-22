@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Turtle Hatcheries in Sri Lanka">
+        <title>Turtle Hatcheries in Sri Lanka</title>
+        <link rel="stylesheet" href="styles/styles3.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    
+    <body>
+
+
+        <div class="head">
+            <section class="headline">
+               <div class="dropdown">
+                    <nav>
+                        <img class="logo" src="https://logopond.com/logos/6829ed6cec107efb9e3817081f258afa.png">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="category.html">Turtle Categories</a></li>
+                            <li><a href="saveturtle.html">Save Turtles</a></li>
+                            <li><a href="threat.html">Threats to turtles</a></li>
+                            <li><a href="#">Turtle Hatcheries <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="hikkaduwa.html">Hikkaduwa hatchery</a></li>
+                                    <li><a href="bentota.html">Bentota hatchery</a></li>
+                                    <li><a href="kosgoda.html">Kosgoda hatchery</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="donation.html">Donations</a></li>
+                            <li><a href="tickets.html">Book Tickets</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h1>Buy Tickets</h1>
+            </section>
+        </div>
+        <div class="payment-style">
+            <div class="detail-container">  
+                <form>
+                  <h2>Payment Details</h2><br>
+                  <label id="CreditCard" for="lable">Card number  :</label>
+                    <input placeholder="CreditCard" type="text" onkeypress="isInputNumber(event)" tabindex="1" required autofocus>
+                  <label id="Expirydate" class="label"> Expiry date :</label>
+                   <div class="select">
+                    <div class="date">
+                      <select name="months" id="months">
+                          <option value="Select">Month</option>
+                          <option value="Jan">January</option>
+                          <option value="Feb">February</option>
+                          <option value="Mar">March</option>
+                          <option value="Apr">April</option>
+                          <option value="May">May</option>
+                          <option value="Jun">June</option>
+                          <option value="Jul">July</option>
+                          <option value="Aug">August</option>
+                          <option value="Sep">September</option>
+                          <option value="Oct">October</option>
+                          <option value="Nov">November</option>
+                          <option value="Dec">December</option>
+                      </select>
+                      <select name="years" id="years">
+                          <option value="Select">Year</option>
+                          <option value="2020">2020</option>
+                          <option value="2021">2021</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                      </select>
+                     </div>
+                    </div>
+                  <label>CVC/CVV  :</label>
+                    <input placeholder="CVV"  onkeypress="isInputNumber(event)" type="text" required>
+                  <label id="CreditCard" class="lable">Name on card   :</label>
+                  <input placeholder="Name on card" type="text" required>
+                        
+          
+                 
+                  <button type="submit"  onclick="document.location='confirmation.html'">Pay</button>
+                
+                </form>
+            </div>
+                  
+              <div class="summery">
+                  <h2>Summery Table</h2>
+                  <table id="summery-table">
+                      <tbody>
+                          <tr>
+                              <td>Full Name</td>
+                              <td id="nameColomn"></td>
+                          </tr>
+                          <tr>
+                              <td>Phone Number</td>
+                              <td id="phoneColomn"></td>
+                          </tr>
+                          <tr>
+                              <td>Email</td>
+                              <td id="emailColomn"></td>
+                          </tr>
+                          <tr>
+                              <td>Date</td>
+                              <td id="dateColomn"> </td>
+                          </tr>
+                          <tr>
+                              <td>Time Duration</td>
+                              <td id="durationColomn"></td>
+                          </tr>
+                          <tr>
+                              <td>Tickets</td>
+                              <td>Charges</td>
+                          </tr>
+                          <tr>
+                              <td>Ticket type</td>
+                              <td id="ticketType"></td>
+                          </tr>
+                           <tr>
+                              <td>Total Payment (USD $)</td>
+                              <td id="TotalpayColomn"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+        
+        
+
+
+            <footer class="footer">
+                <div class="footer-left">
+                    <img src="https://logopond.com/logos/6829ed6cec107efb9e3817081f258afa.png" alt="">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="socialIcons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <ul class="footer-right">
+                    <li>
+                        <h2>About Us</h2>
+                        <ul class="box">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Safety Guidelines</a></li>
+                            <li><a href="#">Donations</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="features">
+                        <h2>Useful Links</h2>
+                        <ul class="box">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Address</h2>
+                        <ul class="box">
+                            <li><a href="#">79/28,</a></li>
+                            <li><a href="#">Pinkanda Road,</a></li>
+                            <li><a href="#">Thiranagama,</a></li>
+                            <li><a href="#">Hikkaduwa</a></li>
+                            <li><a href="#">+94 76 011 1346</a></li>
+                            <li><a href="#">+94 74 136 7352</a></li>
+                            <li><a href="#">info@cosmicturtle.com</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="footer-bottom">
+                    <p>All Right reserved by &copy;conceptial 2023</p>
+                </div>
+               
+            </footer>
+        
+
+
+            
+       
+        <script src="js/payment.js" defer></script>
+        
+    </body>
+</html>
